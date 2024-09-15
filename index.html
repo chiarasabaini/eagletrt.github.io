@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Fri Mar 24 2023 16:39:05 GMT+0000 (Coordinated Universal Time) -->
 <html
+  lang="it"
   data-wf-domain="e-agle.webflow.io"
   data-wf-page="6401ed150a210b770700a87c"
   data-wf-site="6401ed150a210b785600a87b"
 >
   <head>
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W23X3MK46Y");
+    </script>
     <meta charset="utf-8" />
     <title>E-Agle - Home</title>
+    <meta
+      name="description"
+      content="Siamo una squadra di Formula Student composta esclusivamente da studenti e studentesse
+  dell’Università di Trento. Mettiamo alla prova ciò che impariamo,
+  costruendo da zero un’auto da corsa elettrica per sfidare atenei di
+  tutto il mondo nell’anticamera della Formula 1: la Formula Student."
+    />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
     <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./font.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9
       ]><script
         src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -53,15 +72,15 @@
       data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
       class="navbar-logo-left wf-section"
     >
-      <!-- BANNER BEGINS -->
-      <!-- <div class="candidati_banner">
+      <!-- APPLICATION BANNER BEGINS -->
+      <div class="candidati_banner">
         <div class="banner_text-block">
-          Le candidature sono aperte!
+          Applications are open!
           <br />
         </div>
-        <a href="https://airtable.com/shrorVpRaW3HqUUfT" class="candidati_btn w-button">Candidati ora</a>
-      </div> -->
-      <!-- BANNER ENDS -->
+        <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button">Apply now</a>
+      </div>
+      <!-- APPLICATION BANNER ENDS -->
       <div
         data-animation="default"
         data-collapse="medium"
@@ -92,6 +111,7 @@
                   <a href="/chi_siamo" class="navbar_link">Chi siamo</a>
                 </li>
                 <li><a href="/team" class="navbar_link">Team</a></li>
+                <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
                 <li><a href="/garage" class="navbar_link">Garage</a></li>
                 <li>
                   <a href="/per_le_aziende" class="navbar_link"
@@ -113,7 +133,14 @@
               </ul>
             </nav>
             <div class="menu-button w-nav-button">
-              <div class="w-icon-nav-menu"></div>
+              <!-- <div class="w-icon-nav-menu"></div> -->
+              <img
+                src="./assets/icons/menu.png"
+                loading="lazy"
+                alt="menu icon"
+                height="20"
+                width="20"
+              />
             </div>
           </div>
         </div>
@@ -200,19 +227,20 @@
               loading="lazy"
               width="20"
               height="20"
-              alt=""
+              alt="speedometer low"
               class="speed_on-top"
             /><img
               src="./assets/icons/speedometer-1.png"
               loading="lazy"
               width="20"
               height="20"
-              alt=""
+              alt="speedometer high"
               class="speed_below speed_icon"
             /></div></a
         ><img
           src="./assets/bg_img/home_page_bg_img_right.svg"
           loading="lazy"
+          alt=""
           class="bg_img bottom_right"
         />
       </div>
@@ -261,33 +289,411 @@
         </div>
       </div>
       <div class="sponsors_container">
-        <p class="heading_sponsor">I nostri sponsor</p>
+        <h2 class="heading_sponsor">I nostri partner</h2>
+        <br>
         <div class="sub-sponsor_wrapper">
           <div class="brands_container">
             <img
-              src="./assets/sponsors/main_sponsors.svg"
+                  src="./assets/sponsors/all-sponsors.png"
+                  loading="lazy"      
+                  usemap="#sponsormap"            
+                  alt=""
+                  class="sponsor"
+                />
+
+                
+
+                
+              
+            <!-- <img
+              src="./assets/sponsors/main.svg"
               loading="lazy"
               width="500"
               alt=""
               class="brand_image"
-            /><img
-              src="./assets/sponsors/partners.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            /><img
-              src="./assets/sponsors/supporters.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            />
+            /> -->
+
+            <!--gold sponsor-->
+            <!--
+            <ul role="list" class="sponsors_list_gold w-list-unstyled">
+              <li>
+                <a href="https://trentinosviluppo.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Gold_sponsors/TS_w.png"
+                  loading="lazy"
+                  width= "91"
+                  alt=""
+                  class="brand_image"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.dana.com/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Gold_sponsors/Dana_logo_white_noBG 1.png"
+                  loading="lazy"      
+                  width="206" 
+
+                  alt=""
+                  class="brand_image"
+                /></a>
+              </li>
+            </ul>
+            <ul role="list" class="sponsors_list_gold w-list-unstyled">
+              <li></li>
+              <li>
+                <a href="https://www.gokartverona.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Gold_sponsors/affi.png"
+                  loading="lazy"  
+                  
+                  width="105"                
+                  alt=""
+                  class="brand_image"
+                /></a>
+              </li>
+              <li><a href="https://www.roechling.com/it/" aria-current="page" class="navbar_link w--current"
+                ><img
+                src="./assets/sponsors/Gold_sponsors/Roechling.png"
+                loading="lazy"  
+                
+                width="105"                
+                alt=""
+                class="brand_image"
+              /></a>
+            </li>
+            </ul>
+            <br>
+            <br>  
+            <br>   -->
+
+
+            <!--silver sponsor-->
+            <!--first row-->
+            <!--
+            <ul role="list" class="sponsors_list_silver w-list-unstyled">
+              <li>
+                <a href="https://www.aboutenergy.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Silver_sponsors/about energy.png"
+                  loading="lazy"
+                  width= "44"
+                  alt=""
+                  class="brand_image_silver"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.skf.com/it" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Silver_sponsors/SKF_w.png"
+                  loading="lazy"      
+                  width="45"            
+                  alt=""
+                  class="brand_image_silver"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.polistamp.com/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Silver_sponsors/polistamp.png"
+                  loading="lazy"      
+                  width="42"            
+                  alt=""
+                  class="brand_image_silver"
+                /></a>
+              </li>
+              <li>
+                <a href="https://fastenal.eu/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Silver_sponsors/Fastenal-Europe_Logo-_-Icon_wht 1.png"
+                  loading="lazy"      
+                  width="1"            
+                  alt=""
+                  class="brand_image_silver"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.lecont.com/it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Silver_sponsors/LeCont_w.png"
+                  loading="lazy"      
+                  width="40"            
+                  alt=""
+                  class="brand_image_silver"
+                /></a>
+              </li>
+              <li>
+                <a href="https://davcoil.com/?lang=it" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Silver_sponsors/Davcoil_w.png"
+                  loading="lazy"      
+                  width="60"            
+                  alt=""
+                  class="brand_image_silver"
+                /></a>
+              </li>
+              
+            </ul>
+            <br>
+            <br>
+            -->
+
+            
+
+            <!--bronze sponsor-->
+            <!--first row-->
+            <!--
+
+            <ul role="list" class="sponsors_list_bronze w-list-unstyled">
+              <li>
+                <a href="https://3dconnexion.com/it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/3d_conn.png"
+                  loading="lazy"      
+                         
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.tecnoassistenzatrentina.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/tecno assistenza trentina.png"
+                  loading="lazy"      
+                  width="46"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              
+              <li>
+                <a href="https://altair.com/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/altair.png"
+                  loading="lazy"      
+                  width="3"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://wegher.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/wegher.png"
+                  loading="lazy"      
+                  width="31"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.norelem.it/it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/Norelem_w.png"
+                  loading="lazy"      
+                  width="26"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.magil.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/Magil_w.png"
+                  loading="lazy"      
+                  width="14"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.ansys.com/it-it" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/Ansys_w.png"
+                  loading="lazy"      
+                  width="14"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.cattoiauto.com/sedi/trento/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/First_row/cattoi.png"
+                  loading="lazy"      
+                  width="40"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.altium.com/it" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/altium.png"
+                  loading="lazy"      
+                  width="14"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+            </ul>
+            -->
+
+            <!--bronze sponsor-->
+            <!--second row-->
+            <!--
+
+            <ul role="list" class="sponsors_list_bronze w-list-unstyled">
+              <li>
+                <a href="https://lawtaxconsulting.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/law.png"
+                  loading="lazy"      
+                              
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.klueber.com/it/it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/Klüber_w.png"
+                  loading="lazy"      
+                  width="22"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.cerbahealthcare.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/Cerba HealthCare.png"
+                  loading="lazy"      
+                  width="5"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://lappitalia.lappgroup.com/index.html" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/Lapp_w.png"
+                  loading="lazy"      
+                  width="5"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.smartcae.com/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/SmartCAE_w.png"
+                  loading="lazy"      
+                  width="41"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.fsbondtec.at/?lang=en" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/bond_tec.png"
+                  loading="lazy"      
+                  width="7"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.st.com/content/st_com/en.html" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/ST.png"
+                  loading="lazy"      
+                  width="70"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.safety-park.com/it" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Bronze_sponsors/SafetyPark_w.png"
+                  loading="lazy"      
+                  width="70"            
+                  alt=""
+                  class="brand_image_bronze"
+                /></a>
+              </li>
+            </ul>
+
+            <br>
+            <br>
+            -->
+
+
+            <!--Supporters-->
+
+            <!--
+            <ul role="list" class="sponsors_list_supporters w-list-unstyled">
+              <li>
+                <a href="https://www.coni.it/it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Supporter/Coni.png"
+                  loading="lazy"      
+                  width="11"            
+                  alt=""
+                  class="brand_image_support"
+                /></a>
+              </li>
+              <li>
+                <a href="https://calspan.com/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Supporter/Calspan.png"
+                  loading="lazy"      
+                  width="22"            
+                  alt=""
+                  class="brand_image_support"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.molex.com/en-us/home" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Supporter/Molex.png"
+                  loading="lazy"      
+                  width="5"            
+                  alt=""
+                  class="brand_image_support"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.isabellenhuette.de/en/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Supporter/Isabelle.png"
+                  loading="lazy"      
+                  width="5"            
+                  alt=""
+                  class="brand_image_support"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.asinazionale.it/" aria-current="page" class="navbar_link w--current"
+                  ><img
+                  src="./assets/sponsors/Supporter/asi.png"
+                  loading="lazy"      
+                  width="41"            
+                  alt=""
+                  class="brand_image_support"
+                /></a>
+              </li>
+            </ul>
+            -->
+
+
           </div>
         </div>
         <img
           src="./assets/bg_img/home_page_bg_img_left.svg"
           loading="lazy"
+          alt=""
           class="bg_img bottom_left"
         />
       </div>
@@ -303,8 +709,9 @@
           <div class="sub-title_footer">Sede operativa</div>
           <a
             href="https://goo.gl/maps/ZwzsZx3RUqU9Xk5A7"
-            target="_blank"
+            aria-label="ricevi indicazioni stradali per la sede operativa"
             class="inline_icon_text-footer w-inline-block"
+target="_blank"
             ><div class="text-block_footer">
               via Sommarive, 9 - 38123 Povo (TN) - Italy
             </div></a
@@ -317,8 +724,9 @@
           <div class="sub-title_footer">Sede legale</div>
           <a
             href="https://goo.gl/maps/ogMA9oWj6gYVjdmLA"
-            target="_blank"
+            aria-label="ricevi indicazioni stradali per la sede legale"
             class="inline_icon_text-footer w-inline-block"
+target="_blank"
             ><div class="text-block_footer">
               via Fortunato Zeni, 8 - 38068 Rovereto (TN) - Italy
             </div></a
@@ -330,12 +738,15 @@
         >
           <div class="sub-title_footer">Contatti</div>
           <a
-            href="mailto:fsae@unitn.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
+            href="mailto:fsae@eagletrt.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
+            aria-label="scrivici via email"
             class="inline_icon_text-footer w-inline-block"
-            ><div class="text-block_footer">fsae@unitn.it</div></a
+target="_blank"
+            ><div class="text-block_footer">fsae@eagletrt.it</div></a
           ><a
             href="tel:+390461285271"
             class="inline_icon_text-footer w-inline-block"
+target="_blank"
             ><div class="text-block_footer">+39 0461 285271</div></a
           >
         </div>
@@ -343,8 +754,9 @@
       <div class="social_icons_grid">
         <a
           href="https://github.com/eagletrt"
-          target="_blank"
+          aria-label="guarda la nostra organizzazione su github"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/github.png"
             loading="lazy"
@@ -355,7 +767,9 @@
             class="social_media_icon-footer" /></a
         ><a
           href="https://www.youtube.com/@eagletrt"
+          aria-label="vai a vedere il nostro canale youtube"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/youtube.png"
             loading="lazy"
@@ -366,7 +780,9 @@
             class="social_media_icon-footer" /></a
         ><a
           href="https://www.instagram.com/eagletrt/"
+          aria-label="vai a visitare la nostra pagina instagram"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/instagram.png"
             loading="lazy"
@@ -375,31 +791,12 @@
             sizes="35px"
             alt=""
             class="social_media_icon-footer" /></a
-        ><a
-          href="https://www.tiktok.com/@eagletrt?lang=en"
-          class="inline_icon_text-footer w-inline-block"
-          ><img
-            src="./assets/social_media_icons/tik-tok.png"
-            loading="lazy"
-            width="Auto"
-            height="Auto"
-            sizes="35px"
-            alt=""
-            class="social_media_icon-footer" /></a
-        ><a
-          href="https://www.facebook.com/eagletrt/"
-          class="inline_icon_text-footer w-inline-block"
-          ><img
-            src="./assets/social_media_icons/facebook.png"
-            loading="lazy"
-            width="Auto"
-            height="Auto"
-            sizes="35px"
-            alt=""
-            class="social_media_icon-footer" /></a
-        ><a
+        >
+        <a
           href="https://www.linkedin.com/company/eagletrentoracingteam/"
+          aria-label="visita la nostra pagina linkedin"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/linkedin.png"
             loading="lazy"
@@ -408,7 +805,34 @@
             sizes="35px"
             alt=""
             class="social_media_icon-footer"
-        /></a>
+        /></a><a
+          href="https://www.facebook.com/eagletrt/"
+          aria-label="visita la nostra pagina facebook"
+          class="inline_icon_text-footer w-inline-block"
+target="_blank"
+          ><img
+            src="./assets/social_media_icons/facebook.png"
+            loading="lazy"
+            width="Auto"
+            height="Auto"
+            sizes="35px"
+            alt=""
+            class="social_media_icon-footer" /></a
+        >
+        <a
+          href="https://www.tiktok.com/@eagletrt?lang=en"
+          aria-label="visita la nostra pagina tiktok"
+          class="inline_icon_text-footer w-inline-block"
+target="_blank"
+          ><img
+            src="./assets/social_media_icons/tik-tok.png"
+            loading="lazy"
+            width="Auto"
+            height="Auto"
+            sizes="35px"
+            alt=""
+            class="social_media_icon-footer" /></a
+        >
       </div>
       <div class="horizontal_separator"></div>
       <div class="legal_wrapper">
@@ -431,9 +855,10 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="./app.js" type="text/javascript"></script>
+    <script src="./app.min.js" type="text/javascript"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->
   </body>
 </html>
+

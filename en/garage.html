@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Fri Mar 24 2023 16:39:05 GMT+0000 (Coordinated Universal Time) -->
 <html
+  lang="en"
   data-wf-domain="e-agle.webflow.io"
   data-wf-page="6403513a27be9bdd11b58d4e"
   data-wf-site="6401ed150a210b785600a87b"
 >
   <head>
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W23X3MK46Y");
+    </script>
     <meta charset="utf-8" />
     <title>E-Agle - Garage</title>
+    <meta
+      name="description"
+      content="Fenice, the second prototype built, was designed during the
+  pandemic and built despite the problems of lack of
+  microprocessor availability. It possesses a telemetry solution
+  inspired by Formula One cars."
+    />
     <meta content="Eventi" property="og:title" />
     <meta content="Eventi" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
     <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="../font.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9
       ]><script
         src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -36,6 +55,17 @@
       data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
       class="navbar-logo-left wf-section"
     >
+    <!-- APPLICATION BANNER BEGINS -->
+    <div class="candidati_banner">
+      <div class="banner_text-block">
+        Applications are open!
+        <br />
+      </div>
+      <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button"
+        >Apply now</a
+      >
+    </div>
+    <!-- APPLICATION BANNER ENDS -->
       <div
         data-animation="default"
         data-collapse="medium"
@@ -64,9 +94,10 @@
                   <a href="/en/chi_siamo" class="navbar_link">About Us</a>
                 </li>
                 <li><a href="/en/team" class="navbar_link">Team</a></li>
+                <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
                 <li>
                   <a
-                    href="/garage"
+                    href="/en/garage"
                     aria-current="page"
                     class="navbar_link w--current"
                     >Garage</a
@@ -81,7 +112,7 @@
                   <a href="/en/eventi" class="navbar_link">Events</a>
                 </li>
                 <li>
-                  <a href="../index" class="w-inline-block"
+                  <a href="/garage" class="w-inline-block"
                     ><img
                       src="../assets/icons/lang/it.png"
                       loading="eager"
@@ -94,12 +125,21 @@
               </ul>
             </nav>
             <div class="menu-button w-nav-button">
-              <div class="w-icon-nav-menu"></div>
+              <!-- <div class="w-icon-nav-menu"></div> -->
+              <img
+                src="../assets/icons/menu.png"
+                loading="lazy"
+                alt="menu icon"
+                height="20"
+                width="20"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <br>
+    <br>
     <div class="playground">
       <div
         data-current="Tab 1"
@@ -191,7 +231,7 @@
                   <div class="car_specs_wrapper">
                     <h2 class="heading_car_specs">Dimensions</h2>
                     <div>
-                      Length: 2.70m<br /><br />Width: 1.50m<br /><br />Pitch:
+                      Length: 2.70m<br /><br />Width: 1.50m<br /><br />Wheelbase:
                       1.54m<br /><br />Weight: 200kg
                     </div>
                   </div>
@@ -229,7 +269,7 @@
                 </div>
                 <div class="specs_title">Dimensions</div>
                 <div class="text-block_template specs">
-                  Width: 1.50m<br />Pitch: 1.54m<br />Weight: 200kg<br />Weight:
+                  Width: 1.50m<br />Wheelbase: 1.54m<br />Weight: 200kg<br />Weight:
                   43kg
                 </div>
                 <div class="specs_title">Wheels</div>
@@ -358,7 +398,7 @@
                   <div class="car_specs_wrapper">
                     <h2 class="heading_car_specs">Dimensions</h2>
                     <div>
-                      Length: 2.70m<br /><br />Width: 1.50m<br /><br />Pitch:
+                      Length: 2.70m<br /><br />Width: 1.50m<br /><br />Wheelbase:
                       1.54m<br /><br />Weight: 240kg
                     </div>
                   </div>
@@ -393,11 +433,11 @@
                 <div class="text-block_template specs">
                   Maximum power: 80 kW (imposed by the regulation)<br />Maximum
                   possible power: 160 kW<br />Power source: 504V<br />Capacity:
-                  6.5kWh<br />Weight: 43kg<br />Raffredata avaria
+                  6.5kWh<br />Weight: 43kg<br />Air-cooled
                 </div>
                 <div class="specs_title">Dimensions</div>
                 <div class="text-block_template specs">
-                  Length: 2.70m<br />Width: 1.50m<br />Pitch: 1.54m<br />Weight:
+                  Length: 2.70m<br />Width: 1.50m<br />Wheelbase: 1.54m<br />Weight:
                   240kg<br />
                 </div>
                 <div class="specs_title">Chassis</div>
@@ -450,11 +490,12 @@
           id="w-node-edb05c1b-d512-e05e-7022-64880ff50d3a-0ff50d37"
           class="menu_wrapper-footer"
         >
-          <div class="sub-title_footer">Field office</div>
+          <div class="sub-title_footer">Operational HQ</div>
           <a
             href="https://goo.gl/maps/ZwzsZx3RUqU9Xk5A7"
-            target="_blank"
+            aria-label="get directions to operational HQ"
             class="inline_icon_text-footer w-inline-block"
+            target="_blank"
             ><div class="text-block_footer">
               via Sommarive, 9 - 38123 Povo (TN) - Italy
             </div></a
@@ -467,8 +508,9 @@
           <div class="sub-title_footer">Legal office</div>
           <a
             href="https://goo.gl/maps/ogMA9oWj6gYVjdmLA"
-            target="_blank"
+            aria-label="get directions to legal office"
             class="inline_icon_text-footer w-inline-block"
+            target="_blank"
             ><div class="text-block_footer">
               via Fortunato Zeni, 8 - 38068 Rovereto (TN) - Italy
             </div></a
@@ -480,12 +522,15 @@
         >
           <div class="sub-title_footer">Contacts</div>
           <a
-            href="mailto:fsae@unitn.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
+            href="mailto:fsae@eagletrt.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
+            aria-label="email us"
             class="inline_icon_text-footer w-inline-block"
-            ><div class="text-block_footer">fsae@unitn.it</div></a
+            target="_blank"
+            ><div class="text-block_footer">fsae@eagletrt.it</div></a
           ><a
             href="tel:+390461285271"
             class="inline_icon_text-footer w-inline-block"
+            target="_blank"
             ><div class="text-block_footer">+39 0461 285271</div></a
           >
         </div>
@@ -493,8 +538,9 @@
       <div class="social_icons_grid">
         <a
           href="https://github.com/eagletrt"
-          target="_blank"
+          aria-label="see out github organization"
           class="inline_icon_text-footer w-inline-block"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/github.png"
             loading="lazy"
@@ -505,7 +551,9 @@
             class="social_media_icon-footer" /></a
         ><a
           href="https://www.youtube.com/@eagletrt"
+          aria-label="check out our youtube channel"
           class="inline_icon_text-footer w-inline-block"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/youtube.png"
             loading="lazy"
@@ -516,7 +564,9 @@
             class="social_media_icon-footer" /></a
         ><a
           href="https://www.instagram.com/eagletrt/"
+          aria-label="check out our instagram page"
           class="inline_icon_text-footer w-inline-block"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/instagram.png"
             loading="lazy"
@@ -526,19 +576,24 @@
             alt=""
             class="social_media_icon-footer" /></a
         ><a
-          href="https://www.tiktok.com/@eagletrt?lang=en"
+          href="https://www.linkedin.com/company/eagletrentoracingteam/"
+          aria-label="check out our linkedin page"
           class="inline_icon_text-footer w-inline-block"
+          target="_blank"
           ><img
-            src="../assets/social_media_icons/tik-tok.png"
+            src="../assets/social_media_icons/linkedin.png"
             loading="lazy"
             width="Auto"
             height="Auto"
             sizes="35px"
             alt=""
-            class="social_media_icon-footer" /></a
-        ><a
+            class="social_media_icon-footer"
+        /></a>
+        <a
           href="https://www.facebook.com/eagletrt/"
+          aria-label="check out our facebook page"
           class="inline_icon_text-footer w-inline-block"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/facebook.png"
             loading="lazy"
@@ -546,12 +601,15 @@
             height="Auto"
             sizes="35px"
             alt=""
-            class="social_media_icon-footer" /></a
-        ><a
-          href="https://www.linkedin.com/company/eagletrentoracingteam/"
+            class="social_media_icon-footer"
+        /></a>
+        <a
+          href="https://www.tiktok.com/@eagletrt?lang=en"
+          aria-label="check out our tiktok page"
           class="inline_icon_text-footer w-inline-block"
+          target="_blank"
           ><img
-            src="../assets/social_media_icons/linkedin.png"
+            src="../assets/social_media_icons/tik-tok.png"
             loading="lazy"
             width="Auto"
             height="Auto"
@@ -581,7 +639,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="../app.js" type="text/javascript"></script>
+    <script src="../app.min.js" type="text/javascript"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->

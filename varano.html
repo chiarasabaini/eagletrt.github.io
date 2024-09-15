@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Fri Mar 24 2023 16:39:05 GMT+0000 (Coordinated Universal Time) -->
 <html
+  lang="it"
   data-wf-domain="e-agle.webflow.io"
   data-wf-page="6401ed150a210b770700a87c"
   data-wf-site="6401ed150a210b785600a87b"
 >
   <head>
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W23X3MK46Y");
+    </script>
     <meta charset="utf-8" />
     <title>E-Agle - Varano</title>
+    <meta
+      name="description"
+      content="Countdown per sapere esattamente quanto tempo manca alla prossima competizione di Varano"
+    />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
     <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./font.css" rel="stylesheet" type="text/css" />
     <link href="./countdown_style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
       !(function (o, c) {
@@ -48,6 +64,17 @@
       data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
       class="navbar-logo-left wf-section"
     >
+<!-- APPLICATION BANNER BEGINS -->
+      <div class="candidati_banner">
+        <div class="banner_text-block">
+          Applications are open!
+          <br />
+        </div>
+        <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button"
+          >Apply now</a
+        >
+      </div>
+      <!-- APPLICATION BANNER ENDS -->
       <div
         data-animation="default"
         data-collapse="medium"
@@ -78,6 +105,7 @@
                   <a href="/chi_siamo" class="navbar_link">Chi siamo</a>
                 </li>
                 <li><a href="/team" class="navbar_link">Team</a></li>
+                <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
                 <li><a href="/garage" class="navbar_link">Garage</a></li>
                 <li>
                   <a href="/per_le_aziende" class="navbar_link"
@@ -99,13 +127,44 @@
               </ul>
             </nav>
             <div class="menu-button w-nav-button">
-              <div class="w-icon-nav-menu"></div>
+              <!-- <div class="w-icon-nav-menu"></div> -->
+              <img
+                src="./assets/icons/menu.png"
+                loading="lazy"
+                alt="menu icon"
+                height="20"
+                width="20"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="playground">
+      <div class="countdown_wrapper" style="margin-block-end:-75px;">
+        <h1>Deadline Vehicle Status Video</h1>
+        <div id="countdown" class="countdown">
+          <div class="time">
+            <p id="v_days"></p>
+            <p class="spelled">days</p>
+          </div>
+
+          <div class="time">
+            <p id="v_hours"></p>
+            <p class="spelled">hours</p>
+          </div>
+
+          <div class="time">
+            <p id="v_minutes"></p>
+            <p class="spelled">minutes</p>
+          </div>
+
+          <div class="time">
+            <p id="v_seconds"></p>
+            <p class="spelled">seconds</p>
+          </div>
+        </div>
+      </div>
       <div class="countdown_wrapper">
         <h1>Formula ATA: Varano De’ Melegari</h1>
 
@@ -163,8 +222,9 @@
           <div class="sub-title_footer">Sede operativa</div>
           <a
             href="https://goo.gl/maps/ZwzsZx3RUqU9Xk5A7"
-            target="_blank"
+            aria-label="ricevi indicazioni stradali per la sede operativa"
             class="inline_icon_text-footer w-inline-block"
+target="_blank"
             ><div class="text-block_footer">
               via Sommarive, 9 - 38123 Povo (TN) - Italy
             </div></a
@@ -177,8 +237,9 @@
           <div class="sub-title_footer">Sede legale</div>
           <a
             href="https://goo.gl/maps/ogMA9oWj6gYVjdmLA"
-            target="_blank"
+            aria-label="ricevi indicazioni stradali per la sede legale"
             class="inline_icon_text-footer w-inline-block"
+target="_blank"
             ><div class="text-block_footer">
               via Fortunato Zeni, 8 - 38068 Rovereto (TN) - Italy
             </div></a
@@ -190,12 +251,15 @@
         >
           <div class="sub-title_footer">Contatti</div>
           <a
-            href="mailto:fsae@unitn.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
+            href="mailto:fsae@eagletrt.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
+            aria-label="scrivici via email"
             class="inline_icon_text-footer w-inline-block"
-            ><div class="text-block_footer">fsae@unitn.it</div></a
+target="_blank"
+            ><div class="text-block_footer">fsae@eagletrt.it</div></a
           ><a
             href="tel:+390461285271"
             class="inline_icon_text-footer w-inline-block"
+target="_blank"
             ><div class="text-block_footer">+39 0461 285271</div></a
           >
         </div>
@@ -203,8 +267,9 @@
       <div class="social_icons_grid">
         <a
           href="https://github.com/eagletrt"
-          target="_blank"
+          aria-label="guarda la nostra organizzazione su github"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/github.png"
             loading="lazy"
@@ -215,7 +280,9 @@
             class="social_media_icon-footer" /></a
         ><a
           href="https://www.youtube.com/@eagletrt"
+          aria-label="vai a vedere il nostro canale youtube"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/youtube.png"
             loading="lazy"
@@ -226,7 +293,9 @@
             class="social_media_icon-footer" /></a
         ><a
           href="https://www.instagram.com/eagletrt/"
+          aria-label="vai a visitare la nostra pagina instagram"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/instagram.png"
             loading="lazy"
@@ -235,20 +304,25 @@
             sizes="35px"
             alt=""
             class="social_media_icon-footer" /></a
-        ><a
-          href="https://www.tiktok.com/@eagletrt?lang=en"
+        >
+        <a
+          href="https://www.linkedin.com/company/eagletrentoracingteam/"
+          aria-label="visita la nostra pagina linkedin"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
-            src="./assets/social_media_icons/tik-tok.png"
+            src="./assets/social_media_icons/linkedin.png"
             loading="lazy"
             width="Auto"
             height="Auto"
             sizes="35px"
             alt=""
-            class="social_media_icon-footer" /></a
-        ><a
+            class="social_media_icon-footer"
+        /></a><a
           href="https://www.facebook.com/eagletrt/"
+          aria-label="visita la nostra pagina facebook"
           class="inline_icon_text-footer w-inline-block"
+target="_blank"
           ><img
             src="./assets/social_media_icons/facebook.png"
             loading="lazy"
@@ -258,17 +332,19 @@
             alt=""
             class="social_media_icon-footer" /></a
         ><a
-          href="https://www.linkedin.com/company/eagletrentoracingteam/"
-          class="inline_icon_text-footer w-inline-block"
-          ><img
-            src="./assets/social_media_icons/linkedin.png"
-            loading="lazy"
-            width="Auto"
-            height="Auto"
-            sizes="35px"
-            alt=""
-            class="social_media_icon-footer"
-        /></a>
+        href="https://www.tiktok.com/@eagletrt?lang=en"
+        aria-label="visita la nostra pagina tiktok"
+        class="inline_icon_text-footer w-inline-block"
+target="_blank"
+        ><img
+          src="./assets/social_media_icons/tik-tok.png"
+          loading="lazy"
+          width="Auto"
+          height="Auto"
+          sizes="35px"
+          alt=""
+          class="social_media_icon-footer" /></a
+      >
       </div>
       <div class="horizontal_separator"></div>
       <div class="legal_wrapper">
@@ -286,6 +362,7 @@
     </div>
     <!-- FOOTER ENDS -->
     <script>
+      // <!-- VARANO TIMER -->
       const days = document.getElementById("days");
       const hours = document.getElementById("hours");
       const minutes = document.getElementById("minutes");
@@ -312,6 +389,34 @@
       }
 
       setInterval(updateCountdown, 1000);
+
+      // <!-- VECHICLE STATUS VIDEO TIMER -->
+      const v_days = document.getElementById("v_days");
+      const v_hours = document.getElementById("v_hours");
+      const v_minutes = document.getElementById("v_minutes");
+      const v_seconds = document.getElementById("v_seconds");
+
+      const v_currentYear = new Date().getFullYear();
+
+      const v_newYearTime = new Date(`July 07 ${currentYear} 00:00:00`);
+
+      // Update countdown time
+      function v_updateCountdown() {
+        const currentTime = new Date();
+        const diff = v_newYearTime - currentTime;
+
+        const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+        const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+        const m = Math.floor(diff / 1000 / 60) % 60;
+        const s = Math.floor(diff / 1000) % 60;
+
+        v_days.innerHTML = d;
+        v_hours.innerHTML = h < 10 ? "0" + h : h;
+        v_minutes.innerHTML = m < 10 ? "0" + m : m;
+        v_seconds.innerHTML = s < 10 ? "0" + s : s;
+      }
+
+      setInterval(v_updateCountdown, 1000);
     </script>
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6401ed150a210b785600a87b"
@@ -319,7 +424,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="./app.js" type="text/javascript"></script>
+    <script src="./app.min.js" type="text/javascript"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->
